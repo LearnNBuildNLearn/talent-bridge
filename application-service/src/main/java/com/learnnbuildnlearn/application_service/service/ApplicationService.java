@@ -58,4 +58,15 @@ public class ApplicationService {
 
         throw new ResourceNotFoundException("job having id = " + jobId + " not found");
     }
+
+    public ApplicationResponse updateStatus(UUID applicationId, Status newStatus) {
+        Optional<Application> application = applicationRepository.findById(applicationId);
+
+        if(application.isPresent()) {
+            application.get().setStatus(newStatus);
+            return ApplicationMapper.toApplicationResponse(applicationRepository.save(application.get()));
+        }
+
+        throw new ResourceNotFoundException("application having id = " + applicationId + " not found");
+    }
 }
