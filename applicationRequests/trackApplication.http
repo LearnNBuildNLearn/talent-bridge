@@ -1,0 +1,2 @@
+### track application
+GET http://localhost:8080/application/track/a1e45678-1111-4a4d-aaaa-123456789006

@@ -1,0 +1,6 @@
+### update status
+@id = d6439b47-30b2-4b82-8449-ae92b6fa8e24
+@status = WITHDRAWN
+
+PATCH http://localhost:8080/application/update-status?id={{id}}&status={{status}}
+Content-Type: application/json
