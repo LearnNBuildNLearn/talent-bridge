@@ -1,0 +1,34 @@
+GET http://localhost:4000/jobs/6f80e71c-3218-4f56-b2d9-b1e3d5cdae86
+
+###
+### GET request to example server
+POST http://localhost:4000/jobs
+Content-Type: application/json
+
+{
+  "location": "Bangalore",
+  "skill": ["Java", "Spring Boot"],
+  "jobDescription": "Backend Developer",
+  "clientName": "TechCorp",
+  "position": "Senior Developer",
+  "experience": 3,
+  "openings": 2,
+  "pointOfContact": "recruiter@techcorp.com"
+}
+
+
+###
+
+PUT http://localhost:4000/jobs/6f80e71c-3218-4f56-b2d9-b1e3d5cdae86
+Content-Type: application/json
+
+{
+  "location": "Pune",
+  "skill": ["Java", "Spring Boot"],
+  "jobDescription": "Backend Developer",
+  "clientName": "TechCorp",
+  "position": "Junior Developer",
+  "experience": 2,
+  "openings": 2,
+  "pointOfContact": "recruiter@techcorp.com"
+}
