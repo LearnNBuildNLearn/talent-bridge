@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -29,6 +30,11 @@ public class ApplicationController {
         }
 
         return ResponseEntity.ok(applicationService.trackApplication(applicationId));
+    }
+
+    @GetMapping(path = "/all")
+    private ResponseEntity<List<ApplicationResponse>> getAllApplication() {
+        return ResponseEntity.ok(applicationService.getAllApplication());
     }
 
     @PostMapping(path = "/apply/{id}")

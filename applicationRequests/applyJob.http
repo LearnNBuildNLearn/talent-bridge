@@ -1,2 +1,4 @@
 ### apply job
-POST http://localhost:8080/application/apply/123e4567-e89b-12d3-a456-426614174000
+@jobId = a1e45678-1111-4a4d-aaaa-123456789001
+
+POST http://localhost:8080/application/apply/{{jobId}}

@@ -1,0 +1,4 @@
+### get all application
+@id = "a6dcb473-bee8-47c6-be62-1021f4597c63"
+
+GET http://localhost:8080/application/all
