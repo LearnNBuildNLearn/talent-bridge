@@ -1,0 +1,5 @@
+### validate token
+@token = {{token}}
+
+GET http://localhost:8081/auth/validate
+Authorization: Bearer {{token}}
